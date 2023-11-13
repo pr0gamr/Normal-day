@@ -64,7 +64,17 @@ def reset(app, card):
 #end of first choices
 
 #forest choices
+@carousel_app.transition("forest1", "click", "slime")
+def reset(app, card):
+    return "intro1"
 
+@carousel_app.transition("forest1", "click", "man")
+def reset(app, card):
+    return "intro1"
+
+@carousel_app.transition("forest1", "click", "cave")
+def reset(app, card):
+    return "intro1"
 #end of forest choices
 
 #start card
