@@ -24,6 +24,7 @@ cards = [
     Card("intro1"),
     Card("intro2"),
     Card("begin"),
+    Card("forest1"),
 ]
 
 
@@ -51,7 +52,7 @@ def reset(app, card):
 #first choices
 @carousel_app.transition("begin", "click", "forest")
 def reset(app, card):
-    return "intro1"
+    return "forest1"
 
 @carousel_app.transition("begin", "click", "inside")
 def reset(app, card):
