@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Samples</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.13.0.min.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <py-config src="./pyscript.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+    <main>
+        <header>
+            <h1 class="title">A perfectly normal day</h1>
+            <p class="subtitle is3">A Choose your own adventure by Matthew Ertman</p>
+        </header>
+        <section>
+            <article>
+                <template id="startcard">
+                    <div class="p-card">
+                        <h2>Welcome</h2>
+                        <div class="p-card__content">
+                            <p>Press start to begin</p>
+                            <button id="start" autofocus>START</button>
+                        </div>
+                    </div>
+                </template>
+                <template id="intro1">
+                    <div class="p-card">
+                        <h2>A new day</h2>
+                        <div class="p-card__content">
+                            <p>It is just a regular day in the city of Pythonia. The sun is shining, there are few clouds in the sky.</p>
+                            <p>The birds are chirping, the leaves swaying. All was normal...</p>
+                            <button id="next" autofocus>Next...</button>
+                        </div>
+                    </div>
+                </template>
+                <template id="intro2">
+                    <div class="p-card">
+                        <h2>You</h2>
+                        <div class="p-card__content">
+                            <p>You are just a regular person, your name is John.</p>
+                            <p>You enjoy your life, you have a social life your happy with, you love your job.</p>
+                            <p>All is good in your life... until...</p>
+                            <button id="next" autofocus>Next...</button>
+                        </div>
+                    </div>
+                </template>
+                <template id="begin">
+                    <div class="p-card">
+                        <h2>The day begins</h2>
+                        <div class="p-card__content">
+                            <p>You decide to head outside after waking up</p>
+                            <p>(WARNING: ALL CHOISES WILL MATTER AT SOME POINT)</p>
+                            <button id="forest" autofocus>Go to the forest</button>
+                            <button id="inside" autofocus>Go back inside</button>
+                            <button id="town" autofocus>Walk into town</button>
+                        </div>
+                    </div>
+                </template>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
